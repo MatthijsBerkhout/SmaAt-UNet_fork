@@ -76,8 +76,7 @@ After finishing training place the best models (probably the ones with the lowes
 The script [calc_metrics_test_set.py](calc_metrics_test_set.py) will use all the models placed in `checkpoints/comparison` to calculate the MSEs and other metrics such as Precision, Recall, Accuracy, F1, CSI, FAR, HSS.
 The results will get saved in a json in the same folder as the models.
 
-The metrics of the persistence model (for now) are only calculated using the script [test_precip_lightning.py](test_precip_lightning.py). This script will also use all models in that folder and calculate the test-losses for the models in addition to the persistence model.
-It will get handled by [this issue](https://github.com/HansBambel/SmaAt-UNet/issues/28).
+The MSE that is reported in the paper is the `mse_pixel` one.
 
 ### Plots
 Example code for creating similar plots as in the paper can be found in [plot_examples.ipynb](plot_examples.ipynb).
